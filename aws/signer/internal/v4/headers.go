@@ -5,7 +5,6 @@ var IgnoredHeaders = Rules{
 	ExcludeList{
 		MapRule{
 			"Authorization":   struct{}{},
-			"User-Agent":      struct{}{},
 			"X-Amzn-Trace-Id": struct{}{},
 			"Expect":          struct{}{},
 		},
@@ -28,6 +27,7 @@ var RequiredSignedHeaders = Rules{
 			"If-None-Match":                         struct{}{},
 			"If-Unmodified-Since":                   struct{}{},
 			"Range":                                 struct{}{},
+			"User-Agent":      			 struct{}{},
 			"X-Amz-Acl":                             struct{}{},
 			"X-Amz-Copy-Source":                     struct{}{},
 			"X-Amz-Copy-Source-If-Match":            struct{}{},
